@@ -1,4 +1,15 @@
 public class Room {
+    private String north;
+    private String east;
+    private String south;
+    private String west;
+
+    // Constructor
+    Room(){
+
+
+
+    }
 
   Room r1 = new Room();
   Room r2 = new Room();
