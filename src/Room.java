@@ -1,24 +1,47 @@
 public class Room {
     private String name;
+    private String description;
 
-    private String north;
-    private String east;
-    private String south;
-    private String west;
+    private Room north;
+    private Room east;
+    private Room south;
+    private Room west;
 
     // Constructor
-    Room(String name, String north, String east, String south, String west){
+    Room(String name, String description){
         this.name = name;
-
-        this.north = north;
-        this.east = east;
-        this.south = south;
-        this.west = west;
+        this.description = name;
     }
 
+    public Room getNorth() {
+        return north;
+    }
+    public Room getEast() {
+        return east;
+    }
+    public Room getWest() {
+        return west;
+    }
+    public Room getSouth(){
+        return south;
+    }
 
+    public void setNorth(Room north) {
+        this.north = north;
+    }
+    public void setWest(Room west) {
+        this.west = west;
+    }
+    public void setSouth(Room south) {
+        this.south = south;
+    }
+    public void setEast(Room east) {
+        this.east = east;
+    }
 
-
+    public String toString(){
+        return name;
+    }
 
 
 }
