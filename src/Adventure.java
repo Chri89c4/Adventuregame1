@@ -39,6 +39,9 @@ public class Adventure {
         r8.setWest(r7);
         r8.setEast(r9);
 
+        r9.setSouth(r6);
+        r9.setWest(r8);
+
         // Start rummet
         Room currentRoom = r1;
 
