@@ -8,13 +8,12 @@ public class Adventure {
 
         // Start rummet
         System.out.println("Du befinder dig i "+ Map.currentRoom );
+        System.out.println("test test");
 
         System.out.println("For at færdes i grotten kan bruge commandoerne:\n");
 
         a.help();
 
-        r9.setnorth(r6);
-        r9.setWest(r8);
 
         System.out.println("\nHVAD VIL DU?");
 
@@ -69,7 +68,6 @@ public class Adventure {
         System.out.println("look = for at få gentaget beskrivelsen af rummet");
         System.out.println("help for at få instruktion over commandoer");
 
-        System.out.println("hej");
     }
 
 }

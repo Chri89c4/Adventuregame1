@@ -13,7 +13,7 @@ public class Map {
 
 
     Map(){
-        // sætter current room til rum 1
+        //sætter current room til rum 1
         currentRoom = r1;
 
         r1.setSouth(r4);
