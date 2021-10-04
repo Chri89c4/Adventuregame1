@@ -14,9 +14,21 @@ public class Description {
         "The walls are full of pointy needles, so becarefull to not bump into them.",
         "On one of the walls you'll find a word writtin in blood saying... RUN!",
         "There is a never ending hole where the floor should've been, the only way to get across the room is to walk on a slim piece of wood. Be careful!"
-
-
-
     };
+
+    private String getRandom(String[] list){
+
+
+        return "";
+    }
+
+
+    public String getRandomDescription(){
+
+
+
+
+        return "";
+    }
 }
 

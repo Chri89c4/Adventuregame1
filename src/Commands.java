@@ -41,6 +41,9 @@ public class Commands {
         } while (true);
     }
 
+
+
+
     Commands(){
         boolean gamesRunning= true;
         do {
@@ -80,7 +83,7 @@ public class Commands {
             }
             if (userInput.equals("exit")) {
                 System.out.println("Are you sure");
-                String answer= Commands.getAllInput();
+                String answer = Commands.getAllInput();
 
                 if (answer.equals("yes")) {
                     System.out.println("The End...!");
