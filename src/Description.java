@@ -30,7 +30,7 @@ public class Description {
 
 
     public String getRandomDescription(){
-        return (Map.currentRoom + "- You find yourself in a very" + getRandom(adjectiveListScarry) + " room. " + getRandom(secondRoomDescription));
+        return ( Player.getCurrentRoom() + "- You find yourself in a very" + getRandom(adjectiveListScarry) + " room. " + getRandom(secondRoomDescription));
 
     }
 }

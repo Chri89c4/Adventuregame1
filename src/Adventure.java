@@ -1,29 +1,32 @@
 import java.util.Scanner;
 
 public class Adventure {
+
+    public static boolean gamesRunning = true;
+
     public static void main(String[] args) {
-
-
-
-
-
 
         Adventure a = new Adventure();
         Map map = new Map();
+        Commands commands = new Commands();
 
-        
 
 
         // Start rummet
-        System.out.println("Du befinder dig i "+ Map.currentRoom );
+        System.out.println("Du befinder dig i "+ Player.getCurrentRoom());
 
         System.out.println("For at færdes i grotten kan bruge commandoerne:\n");
         a.help();
 
         System.out.println("\nHVAD VIL DU?");
 
-        Commands commands = new Commands();
 
+
+
+        do {
+            commands.nextMovement();
+
+        } while (gamesRunning);
 
     }
 

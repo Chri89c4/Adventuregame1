@@ -1,6 +1,4 @@
 public class Map {
-    static Room currentRoom;
-
 
     Map(){
         Description desc = new Description();
@@ -16,7 +14,7 @@ public class Map {
         Room r9 = new Room("Rum9", desc.getRandomDescription());
 
         //sætter current room til rum 1
-        currentRoom = r1;
+        Player.setCurrentRoom(r1);
 
         r1.setSouth(r4);
         r1.setEast(r2);
