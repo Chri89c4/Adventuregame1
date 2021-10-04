@@ -40,4 +40,61 @@ public class Commands {
 
         } while (true);
     }
+
+    Commands(){
+        boolean gamesRunning= true;
+        do {
+            String userInput = Commands.getAllInput();
+
+            if (userInput.equals("go north")) {
+                if (Map.currentRoom.getNorth() != null) {
+                    Map.currentRoom = Map.currentRoom.getNorth();
+                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                } else
+                    System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
+            }
+
+            if (userInput.equals("go east")) {
+                if (Map.currentRoom.getEast() != null) {
+                    Map.currentRoom = Map.currentRoom.getEast();
+                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                } else
+                    System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
+            }
+
+            if (userInput.equals("go west")) {
+                if (Map.currentRoom.getWest() != null) {
+                    Map.currentRoom = Map.currentRoom.getWest();
+                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                } else
+                    System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
+            }
+
+            if (userInput.equals("go south")) {
+                if (Map.currentRoom.getSouth() != null) {
+                    Map.currentRoom = Map.currentRoom.getSouth();
+                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                } else
+                    System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
+
+            }
+            if (userInput.equals("exit")) {
+                System.out.println("Are you sure");
+                String answer= Commands.getAllInput();
+
+                if (answer.equals("yes")) {
+                    System.out.println("The End...!");
+                    gamesRunning = false;
+
+                }
+                if (answer.equals("no")) {
+                    System.out.println("Good");
+                    System.out.println("You can continue your game");
+                    gamesRunning = true;
+                }
+            }
+
+        } while (gamesRunning);
+    }
+
 }
