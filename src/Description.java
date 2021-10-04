@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Description {
 
     //System.out.println(currentroom + "- You find yourself in a very" + random adjectiveListScarry + "room. " + random secondDescription);
@@ -17,18 +19,19 @@ public class Description {
     };
 
     private String getRandom(String[] list){
+        Random random = new Random();
 
+        int randomNumber = random.nextInt(list.length);
 
-        return "";
+        String randomString = list[randomNumber];
+
+        return randomString;
     }
 
 
     public String getRandomDescription(){
+        return (Map.currentRoom + "- You find yourself in a very" + getRandom(adjectiveListScarry) + " room. " + getRandom(secondRoomDescription));
 
-
-
-
-        return "";
     }
 }
 

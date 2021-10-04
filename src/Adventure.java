@@ -3,8 +3,15 @@ import java.util.Scanner;
 public class Adventure {
     public static void main(String[] args) {
 
+
+
+
+
+
         Adventure a = new Adventure();
         Map map = new Map();
+
+        
 
 
         // Start rummet

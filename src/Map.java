@@ -2,7 +2,6 @@ public class Map {
     static Room currentRoom;
 
 
-
     Map(){
         Description desc = new Description();
 

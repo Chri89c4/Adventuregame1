@@ -1,6 +1,6 @@
 public class Room {
     private String name;
-    private String description;
+    public String description;
 
     private Room north;
     private Room east;
@@ -37,6 +37,10 @@ public class Room {
     }
     public void setEast(Room east) {
         this.east = east;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public String toString(){

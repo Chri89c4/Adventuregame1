@@ -52,7 +52,7 @@ public class Commands {
             if (userInput.equals("go north")) {
                 if (Map.currentRoom.getNorth() != null) {
                     Map.currentRoom = Map.currentRoom.getNorth();
-                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                    System.out.println(Map.currentRoom.getDescription());
                 } else
                     System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
             }
@@ -60,7 +60,7 @@ public class Commands {
             if (userInput.equals("go east")) {
                 if (Map.currentRoom.getEast() != null) {
                     Map.currentRoom = Map.currentRoom.getEast();
-                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                    System.out.println(Map.currentRoom.getDescription());
                 } else
                     System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
             }
@@ -68,7 +68,7 @@ public class Commands {
             if (userInput.equals("go west")) {
                 if (Map.currentRoom.getWest() != null) {
                     Map.currentRoom = Map.currentRoom.getWest();
-                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                    System.out.println(Map.currentRoom.getDescription());
                 } else
                     System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
             }
@@ -76,7 +76,7 @@ public class Commands {
             if (userInput.equals("go south")) {
                 if (Map.currentRoom.getSouth() != null) {
                     Map.currentRoom = Map.currentRoom.getSouth();
-                    System.out.println("Du er nu i rum " + Map.currentRoom);
+                    System.out.println(Map.currentRoom.getDescription());
                 } else
                     System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
 
