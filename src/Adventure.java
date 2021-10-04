@@ -20,13 +20,8 @@ public class Adventure {
 
     }
 
-    public static String getInput() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
-    }
 
-    public void checkInput(String getInput) {
-    }
+
 
     public void help(){
         System.out.println("exit = for at afbryde spillet");

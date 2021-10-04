@@ -44,7 +44,7 @@ public class Commands {
     Commands(){
         boolean gamesRunning= true;
         do {
-            String userInput = Adventure.getInput();
+            String userInput = Commands.getAllInput();
 
             if (userInput.equals("go north")) {
                 if (Map.currentRoom.getNorth() != null) {
@@ -80,13 +80,14 @@ public class Commands {
             }
             if (userInput.equals("exit")) {
                 System.out.println("Are you sure");
-                //gamesRunning = false;
-                if (userInput.equals("yes")) {
+                String answer= Commands.getAllInput();
+
+                if (answer.equals("yes")) {
                     System.out.println("The End...!");
                     gamesRunning = false;
 
                 }
-                if (userInput.equals("no")) {
+                if (answer.equals("no")) {
                     System.out.println("Good");
                     System.out.println("You can continue your game");
                     gamesRunning = true;
