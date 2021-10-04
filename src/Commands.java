@@ -40,6 +40,7 @@ public class Commands {
 
         } while (true);
     }
+
     Commands(){
         boolean gamesRunning= true;
         do {
@@ -94,4 +95,5 @@ public class Commands {
 
         } while (gamesRunning);
     }
+
 }

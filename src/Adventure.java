@@ -11,13 +11,11 @@ public class Adventure {
         System.out.println("Du befinder dig i "+ Map.currentRoom );
 
         System.out.println("For at færdes i grotten kan bruge commandoerne:\n");
-
         a.help();
-
 
         System.out.println("\nHVAD VIL DU?");
 
-        Commands commands= new Commands();
+        Commands commands = new Commands();
 
 
     }
