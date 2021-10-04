@@ -1,18 +1,21 @@
 public class Map {
     static Room currentRoom;
 
-    Room r1 = new Room("Rum1", "Dette er rum 1");
-    Room r2 = new Room("Rum2", "Dette er rum 2");
-    Room r3 = new Room("Rum3", "Dette er rum 3");
-    Room r4 = new Room("Rum4", "Dette er rum 4");
-    Room r5 = new Room("Rum5", "Dette er rum 5");
-    Room r6 = new Room("Rum6", "Dette er rum 6");
-    Room r7 = new Room("Rum7", "Dette er rum 7");
-    Room r8 = new Room("Rum8", "Dette er rum 8");
-    Room r9 = new Room("Rum9", "Dette er rum 9");
 
 
     Map(){
+        Description desc = new Description();
+
+        Room r1 = new Room("Rum1", desc.getRandomDescription());
+        Room r2 = new Room("Rum2", desc.getRandomDescription());
+        Room r3 = new Room("Rum3", desc.getRandomDescription());
+        Room r4 = new Room("Rum4", desc.getRandomDescription());
+        Room r5 = new Room("Rum5", desc.getRandomDescription());
+        Room r6 = new Room("Rum6", desc.getRandomDescription());
+        Room r7 = new Room("Rum7", desc.getRandomDescription());
+        Room r8 = new Room("Rum8", desc.getRandomDescription());
+        Room r9 = new Room("Rum9", desc.getRandomDescription());
+
         //sætter current room til rum 1
         currentRoom = r1;
 
