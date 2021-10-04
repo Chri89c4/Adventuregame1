@@ -13,6 +13,8 @@ public class Adventure {
 
         a.help();
 
+        r9.setnorth(r6);
+        r9.setWest(r8);
 
         System.out.println("\nHVAD VIL DU?");
 
@@ -66,6 +68,8 @@ public class Adventure {
         System.out.println("exit = for at afbryde spillet");
         System.out.println("look = for at få gentaget beskrivelsen af rummet");
         System.out.println("help for at få instruktion over commandoer");
+
+        System.out.println("hej");
     }
 
 }
