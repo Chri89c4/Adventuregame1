@@ -1,6 +1,6 @@
 public class Room {
     private String name;
-    public String description;
+    private String description;
 
     private Room north;
     private Room east;
@@ -10,7 +10,7 @@ public class Room {
     // Constructor
     Room(String name, String description){
         this.name = name;
-        this.description = name;
+        this.description = description;
     }
 
     public Room getNorth() {
@@ -44,7 +44,7 @@ public class Room {
     }
 
     public String toString(){
-        return name;
+        return name + " " + description;
     }
 
 
