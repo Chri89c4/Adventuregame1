@@ -13,6 +13,8 @@ public class Adventure {
 
 
         // Start rummet
+
+
         System.out.println("Du befinder dig i "+ Player.getCurrentRoom());
 
         System.out.println("For at færdes i grotten kan bruge commandoerne:\n");
