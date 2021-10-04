@@ -6,6 +6,7 @@ public class Adventure {
         Adventure a = new Adventure();
         Map map = new Map();
 
+
         // Start rummet
         System.out.println("Du befinder dig i "+ Map.currentRoom );
 
@@ -15,8 +16,10 @@ public class Adventure {
 
 
         System.out.println("\nHVAD VIL DU?");
+        //Commands.getAllInput();
+        Commands commands= new Commands();
 
-        do {
+       /* do {
             String userInput = a.getInput();
 
             if (userInput.equals("go north")) {
@@ -51,10 +54,29 @@ public class Adventure {
                     System.out.println("you bumbed in a wall \n" + "you are still in " + Map.currentRoom);
 
             }
-        } while (true);
+            userInput = Commands.getAllInput();
+            if (userInput.equals("exit")) {
+                System.out.println("Are you sure");
+                //gamesRunning = false;
+                if (userInput.equals("yes")) {
+                    System.out.println("The End...!");
+                    gamesRunning = false;
+
+                }
+                if (userInput.equals("no")) {
+                    System.out.println("Good");
+                    System.out.println("You can continue your game");
+                    gamesRunning = true;
+                }
+            }
+
+        } while (gamesRunning);
+        */
+
+
     }
 
-    public String getInput() {
+    public static String getInput() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
