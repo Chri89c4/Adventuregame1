@@ -8,7 +8,6 @@ public class Adventure {
 
         // Start rummet
         System.out.println("Du befinder dig i "+ Map.currentRoom );
-        System.out.println("test test");
 
         System.out.println("For at færdes i grotten kan bruge commandoerne:\n");
 
