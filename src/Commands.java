@@ -4,9 +4,13 @@ public class Commands {
 
     // All Commands
     final static private String GO_NORTH = "go north";
+    final static private String GO_N = "n";
     final static private String GO_EAST = "go east";
+    final static private String GO_E = "e";
     final static private String GO_SOUTH = "go south";
+    final static private String GO_S = "s";
     final static private String GO_WEST = "go west";
+    final static private String GO_W = "w";
 
     final static private String HELP = "help";
     final static private String DESCRIPTION = "description";
@@ -16,7 +20,7 @@ public class Commands {
     final static private String YES = "yes";
     final static private String NO = "no";
 
-    final static private String[] COMMANDS_LIST = {GO_NORTH, GO_EAST, GO_SOUTH, GO_WEST, HELP, DESCRIPTION, EXIT, YES, NO, LOOK};
+    final static private String[] COMMANDS_LIST = {GO_NORTH, GO_N, GO_EAST, GO_E, GO_SOUTH, GO_S, GO_WEST, GO_W, HELP, DESCRIPTION, EXIT, YES, NO, LOOK};
 
     public static String getAllInput() {
         Scanner scanner = new Scanner(System.in);
@@ -61,7 +65,7 @@ public class Commands {
         System.out.println("_________________________________");
         System.out.println("Type help - In case of emergency.\n"
             + "Type look - To get the room description again.\n"
-            + "Type exit - To rage quit and end the game.\n");
+            + "Type exit - To rage quit and end the game.");
 
         System.out.println("\nIn which direction do you want to go?");
 
@@ -82,7 +86,7 @@ public class Commands {
             System.out.println(Player.getCurrentRoom());
         }
 
-        if (userInput.equals("go north")) {
+        if (userInput.equals("go north") || userInput.equals("n")) {
             if (Player.getCurrentRoom().getNorth() != null) {
                 Player.setCurrentRoom(Player.getCurrentRoom().getNorth());
 
@@ -92,7 +96,7 @@ public class Commands {
                 System.out.println("you bumbed in a wall \n" + "you are still in " + Player.getCurrentRoom());
         }
 
-        if (userInput.equals("go east")) {
+        if (userInput.equals("go east") || userInput.equals("e")) {
             if (Player.getCurrentRoom().getEast() != null) {
                 Player.setCurrentRoom(Player.getCurrentRoom().getEast());
 
@@ -101,7 +105,7 @@ public class Commands {
                 System.out.println("you bumbed in a wall \n" + "you are still in " + Player.getCurrentRoom());
         }
 
-        if (userInput.equals("go west")) {
+        if (userInput.equals("go west") || userInput.equals("w")) {
             if (Player.getCurrentRoom().getWest() != null) {
                 Player.setCurrentRoom(Player.getCurrentRoom().getWest());
 
@@ -111,7 +115,7 @@ public class Commands {
                 System.out.println("you bumbed in a wall \n" + "you are still in " + Player.getCurrentRoom());
         }
 
-        if (userInput.equals("go south")) {
+        if (userInput.equals("go south") || userInput.equals("s")) {
             if (Player.getCurrentRoom().getSouth() != null) {
                 Player.setCurrentRoom(Player.getCurrentRoom().getSouth());
 
