@@ -45,7 +45,22 @@ public class Commands {
 
         } while (true);
     }
+    public static String getYesOrNo(){
+        Scanner scanner = new Scanner(System.in);
 
+        while (true) {
+            String input = scanner.nextLine();
+
+            if (input.equals(YES) || input.equals(NO)){
+                return input;
+            } else {
+                System.out.println("Yes or No");
+
+            }
+        }
+
+
+    }
 
     public String intro(){
         Scanner scanner = new Scanner(System.in);
@@ -79,6 +94,7 @@ public class Commands {
             + "Type look - To get the room description again.\n"
             + "Type exit - To rage quit and end the game.\n");
     }
+
     public void nextMovement() {
         String userInput = Commands.getAllInput();
 
@@ -129,7 +145,7 @@ public class Commands {
         if (userInput.equals("exit")) {
             System.out.println("Are you sure");
 
-            String answer = Commands.getAllInput();
+            String answer = getYesOrNo();
 
             if (answer.equals("yes")) {
                 System.out.println("The End...!");
