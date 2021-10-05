@@ -7,8 +7,6 @@ public class Adventure {
     public static void main(String[] args) {
 
         Commands commands = new Commands();
-        Adventure a = new Adventure();
-
         Map map = new Map();
         Description desc = new Description();
 

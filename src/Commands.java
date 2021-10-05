@@ -75,7 +75,7 @@ public class Commands {
         System.out.println("\nTo navigave throughout the cave, you can use the following commands:");
         System.out.println("go north \ngo east \ngo south \ngo west");
         System.out.println("_________________________________");
-        System.out.println("Type help - In case of emergency.\n"
+        System.out.println("Type help - For list of commands.\n"
             + "Type look - To get the room description again.\n"
             + "Type exit - To rage quit and end the game.\n");
     }
