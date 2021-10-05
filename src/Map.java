@@ -1,15 +1,15 @@
 public class Map {
     Description desc = new Description();
 
-    Room r1 = new Room("Rum1", desc.getRandomDescription());
-    Room r2 = new Room("Rum2", desc.getRandomDescription());
-    Room r3 = new Room("Rum3", desc.getRandomDescription());
-    Room r4 = new Room("Rum4", desc.getRandomDescription());
-    Room r5 = new Room("Rum5", desc.getRandomDescription());
-    Room r6 = new Room("Rum6", desc.getRandomDescription());
-    Room r7 = new Room("Rum7", desc.getRandomDescription());
-    Room r8 = new Room("Rum8", desc.getRandomDescription());
-    Room r9 = new Room("Rum9", desc.getRandomDescription());
+    Room r1 = new Room("Room 1", desc.getRandomDescription());
+    Room r2 = new Room("Room 2", desc.getRandomDescription());
+    Room r3 = new Room("Room 3", desc.getRandomDescription());
+    Room r4 = new Room("Room 4", desc.getRandomDescription());
+    Room r5 = new Room("Room 5", desc.getRandomDescription());
+    Room r6 = new Room("Room 6", desc.getRandomDescription());
+    Room r7 = new Room("Room 7", desc.getRandomDescription());
+    Room r8 = new Room("Room 8", desc.getRandomDescription());
+    Room r9 = new Room("Room 9", desc.getRandomDescription());
 
     Map(){
         //sætter current room til rum 1

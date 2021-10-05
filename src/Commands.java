@@ -46,26 +46,34 @@ public class Commands {
     public String intro(){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to the amazing cave adventure game!");
+        System.out.println("Welcome to the Cave Adventure Game!");
+        System.out.println("____________________________________");
 
         System.out.println("What is your name explorer?");
         String playerName = scanner.nextLine();
 
-        System.out.println("Great to have you in the game "+ playerName);
+        System.out.println("Great to have you in the game "+ playerName + "!");
 
-        System.out.println("Du befinder dig i \n" + Player.getCurrentRoom());
+        System.out.println("\nThis is the start of the cave and you are currently in  " + Player.getCurrentRoom());
 
-        System.out.println("For at færdes i grotten kan bruge commandoerne:\n");
+        System.out.println("\nTo navigave throughout the cave, you can use the following commands:");
+        System.out.println("go north \ngo east \ngo south \ngo west");
+        System.out.println("_________________________________");
+        System.out.println("Type help - In case of emergency.\n"
+            + "Type look - To get the room description again.\n"
+            + "Type exit - To rage quit and end the game.\n");
 
-        System.out.println("\nHVAD VIL DU?");
+        System.out.println("\nIn which direction do you want to go?");
 
         return playerName;
     }
     public void help() {
-        System.out.println("Du navigerer ved at skrive:\ngo north \ngo east \ngo south \ngo west");
-        System.out.println("exit = for at afbryde spillet");
-        System.out.println("look = for at få gentaget beskrivelsen af rummet");
-        System.out.println("help for at få instruktion over commandoer");
+        System.out.println("\nTo navigave throughout the cave, you can use the following commands:");
+        System.out.println("go north \ngo east \ngo south \ngo west");
+        System.out.println("_________________________________");
+        System.out.println("Type help - In case of emergency.\n"
+            + "Type look - To get the room description again.\n"
+            + "Type exit - To rage quit and end the game.\n");
     }
     public void nextMovement() {
         String userInput = Commands.getAllInput();
